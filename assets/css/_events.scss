@@ -1,0 +1,29 @@
+// @import 'variables';
+// @import 'buttons';
+
+// .events{
+//     width: 100%;
+//     height: auto;
+//     text-align: center;
+//     color: var(--color-white);
+//     padding: 4rem 0;
+//     h2{
+//         font-size: var(--title-section);
+//     }
+//     .events-itens{
+//         display: flex;
+//         gap: 3rem;
+//         justify-content: center;
+
+//         div{
+//             margin: 4rem 0;
+//             img{
+//                 width: 23rem;
+//                 border-radius: 1rem;
+//             }
+//         }
+//     }
+//     .events-btn{
+//         @include button();  
+//     }
+// }

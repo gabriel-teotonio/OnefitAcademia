@@ -1,0 +1,52 @@
+
+
+@import 'variables';
+@import 'buttons';
+@import 'header';
+@import 'home';
+@import 'cards';
+@import 'services';
+@import 'events';
+@import 'features';
+@import 'programation';
+@import 'footer';
+@import 'location';
+@import 'swiper';
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-bg);
+    font-family: 'poppins', sans-serif;
+}
+
+.destaque-text{
+    color: var(--color-primary);
+}
+
+
+.logo-whatsapp{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    cursor: pointer;
+    z-index: 100;
+}
+.fa-whatsapp{
+    font-size: 4rem;
+    color: var(--color-green);
+}
+
+@media(max-width:600px){
+    .fa-whatsapp{
+        font-size: 3rem;
+    }
+}

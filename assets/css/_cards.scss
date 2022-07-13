@@ -1,0 +1,159 @@
+@import 'buttons';
+@import 'variables';
+
+.planos-cards{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 0;
+
+    h2{
+        font-size: var(--title-section);
+        color: white;
+        .destaque-text{
+            color: var(--color-primary);
+        }
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        max-width: 90%;
+        height: auto;
+        gap: 6rem;
+        
+        .card-plus{
+            box-shadow: var(--shadow-plus);
+        }
+        .card-base{
+            box-shadow: var(--shadow-base);
+        }
+        .card{
+            max-width: 21rem;
+            min-height: 43rem;
+            background-color: rgb(226, 226, 226);
+            border-radius: 1rem;
+            outline: 2px solid transparent;
+            cursor: pointer;
+            padding-bottom: 1rem;
+
+            &:hover{
+                outline: 2px solid  var(--color-secundary);
+                transition: .3s;
+            }
+
+            .card-title{
+                width: 100%;
+                height: 4.8rem;
+                font-size: 2.2rem;
+                background-color: rgba(0, 0, 0, 0.23);
+                border-radius: 1rem 1rem 0 0 ;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h5{
+                    font-weight: 400;
+                    span{
+                        font-weight: 700;
+                    }
+                }
+            }
+            .title-plus{
+                background-color: var(--color-secundary);
+            }
+
+            .card-price{
+                width: 100%;
+                text-align: center;
+                padding: 1.1rem 0;
+
+                .price-text{
+                    font-size: 2rem;
+                    font-weight: 300;
+                }
+                .price-value{
+                    font-family: sans-serif;
+                    font-size: 3rem;
+                    font-weight: 700;
+                }
+            }
+
+            .card-benefits{
+                width: 100%;
+                padding: 0 2rem;
+
+                ul{
+                    list-style: none;
+                    li{
+                        font-size: .9rem;
+                        margin-top: 1rem;
+                        color: rgb(131, 131, 131);
+                        position: relative;
+                        &::before{
+                            display: block;
+                            content: ' ';
+                            height: 6px;
+                            width: 6px;
+                            background-color: rgb(70, 70, 70);
+                            position: absolute;
+                            top: .6rem;
+                            left: -1rem;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                .list-plus{
+                    li{
+                        &::before{
+                            background-color: var(--color-secundary);
+                        }
+                    }
+                }
+            }
+            .card-footer{
+                display: flex;
+                justify-content: center;
+                margin-top: 4rem;
+
+                button{
+                    @include button-2();
+                    width: 60%;
+                    background-color: var(--color-primary);
+                    box-shadow: none;
+                    display: none;
+                }
+            }
+        }
+    }
+    .planos-btn{
+        @include button();
+    }
+}
+
+
+
+
+@media(max-width:720px){
+    .planos-cards{
+        .cards{
+            flex-direction: column;
+            .card{
+                cursor: initial;
+                &:hover{
+                    outline: none;
+                }
+                .card-footer{
+                    button{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

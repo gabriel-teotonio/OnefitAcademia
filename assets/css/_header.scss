@@ -1,0 +1,107 @@
+@import 'buttons';
+
+
+header{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7rem;
+    z-index: 10;
+    // background-color: rgb(71, 128, 177);
+
+    .h-logo{
+        cursor: pointer;
+        width: 10rem;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+            ul{
+                display: flex;
+                list-style: none;
+                color: white;
+                gap: 1rem;
+                font-size: 1.2rem;
+
+                li{
+                    border-bottom: 1px solid transparent;
+                    cursor: pointer;
+                    transition: .3s;
+                    &:hover{
+                        border-bottom: 1px solid;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: rgb(255, 255, 255);
+                        &:hover{
+                            color: lightgray;
+                        }
+                    }
+                }
+            }
+    }
+    
+    .h-icons{
+        color: white;
+        font-size: 1.5rem;
+    
+        i{
+            margin: .3rem;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover{
+                color: var(--color-primary);
+            }
+        }
+    }
+    #menu-btn{
+        background-color: transparent;
+        text-align: center;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        display: none;
+    }
+}
+
+.menuFixo{
+    position: fixed;
+    background-color: black;
+    transition: .5s;
+    width: 100vw;
+}
+
+
+
+
+@media(max-width:980px){
+    header{
+        padding: 1rem 1rem;
+        nav{
+            background-color: rgba(14, 13, 13, 0.999);
+            flex-direction: column;
+            position: absolute;
+            left: -10rem;
+            top: 0;
+            height: 100vh;
+            width: 0;
+            padding-top: 2rem;
+            transition: .4s;
+
+            &.show-menu{
+                left: 0;
+                width: 50%;
+            }
+            ul{
+                flex-direction: column;
+            }
+        }
+       #menu-btn{
+        display: block;
+       }
+    }
+}

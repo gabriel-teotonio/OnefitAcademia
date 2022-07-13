@@ -1,0 +1,85 @@
+
+@import 'buttons';
+
+footer{
+    height: auto;
+    min-height: 60vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.773);
+    color: var(--color-white);
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    padding: 0 4rem;
+    padding-top: 4rem;
+    
+    .footer-contain{
+        display: grid;
+        grid-template-columns: repeat(3,1fr) ;
+        
+        .footer-dates{
+            p{
+                margin: 1rem 0;
+            }
+        }
+        .contain-aboutOne{
+            p{
+                width: auto;
+                cursor: pointer;
+                transition: .3s;
+                &:hover{
+                    color: var(--color-primary);
+                }
+            }
+        }
+        .contain-contact{
+            text-align: center;
+            h5{
+                font-size: 1.5rem;
+                margin: 1rem 0;
+                ~i{
+                    font-size: 2rem;
+                    cursor: pointer;
+                    &:hover{
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+    
+    .footer-img{
+        width: 15rem;
+    }
+    .footer-botton{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        font-size: .8rem;
+    }
+    .footer-btnZap{
+        @include button-zap();
+        i{
+            font-size: 1rem;
+            color: white;
+        }
+    }
+}
+
+
+@media(max-width:980px){
+    footer{
+        justify-content: center;
+        gap: 6rem;
+        .footer-contain{
+            grid-template-columns: 1fr;
+            gap: 2rem;
+
+            .footer-img{
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

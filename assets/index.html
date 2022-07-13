@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriFit</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+</head>
+<body>
+    <div class="logo-whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+    <header>
+        <img class="h-logo" src="/images/Academia-Logo.png" alt="logo nutriFit">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#horarios">Horários</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+            </ul>
+            <span class="h-icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-square"></i>
+            </span>
+        </nav>
+        <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <section id="home" class="home">
+        <article class="h-content">
+            <div class="h-content-txt">
+                <h1>Junte-se a One Fit</h1>
+                <h4>Eleve seu nível</h4>
+            </div>
+            <ul>
+                <li><i class="fa-solid fa-child-reaching"></i> Cuide do seu corpo</li>
+                <li><i class="fa-solid fa-brain"></i>Cuide da sua mente</li>
+                <li><i class="fa-solid fa-user"></i>Cuide de você</li>
+            </ul>
+            <button class="h-content_btn">VER PLANOS</button>
+        </article>
+        <img class="image-main" src="/images/Medium shot man holding kettlebell.png" alt="">
+    </section>
+    <main>
+        <section id="planos" class="planos-cards">
+            <h2>Escolha <span class="destaque-text">seu Plano</span></h2>
+            <article class="cards">
+                <div class="card card-plus">
+                    <div class="card-title title-plus"><h5>plano <span class="destaque-plus">Plus</span></h5></div>
+                    <div class="card-price">
+                        <p class="price-text">A partir de</p>
+                        <p class="price-value">R$69,90</p>
+                    </div>
+                    <div class="card-benefits">
+                        <ul class="list-plus">
+                            <li>Acesso total a academia e aulas coletivas </li>
+                            <li>Aulas de Ginastica</li>
+                            <li>Área de musculação e aeróbicos</li>
+                            <li>Horário livre</li>
+                            <li>Participação nos eventos NutriFit</li>
+                            <li>Horário livre</li>
+                            <li>Leve um acompanhante com você</li>
+                            <li>Presenteie alguém com 30 dias grátis</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer"><button>Quero esse</button></div>
+                </div>
+                
+                    <div class="card card-base">
+                        <div class="card-title title-base"><h5>plano <span class="destaque-base">one</span></h5></div>
+                        <div class="card-price">
+                            <p class="price-text">A partir de</p>
+                            <p class="price-value">R$59,90</p>
+                        </div>
+                        <div class="card-benefits">
+                            <ul>
+                                <li>Acesso total a academia e aulas coletivas </li>
+                                <li>Aulas de Ginastica</li>
+                                <li>Área de musculação e aeróbicos</li>
+                                <li>Horário livre</li>
+                                <li>Participação nos eventos NutriFit</li>
+                                <li>Horário livre</li>
+                                <li><s>Leve um acompanhante com você</s></li>
+                                <li><s>Presenteie alguém com 30 dias grátis</s></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer"><button>Quero esse</button></div>
+                    </div>    
+            </article>
+            <button class="planos-btn">Quero me matricular</button>
+        </section>
+
+        <section id="servicos" class="services">
+            <h2>O que oferecemos</h2>
+            <article class="services-itens">
+                <div><img src="/images/woman training.png" alt="mulher treinando"><p>Área de musculação</p></div>
+                <div><img src="/images/Woman using the treadmill.png" alt="mulher correndo na esteira"><p>Aparelhos aeróbicos</p></div>
+                <div><img src="/images/Active people.png" alt="pessoas dançando"><p>Fit Dance</p></div>
+            </article>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="/images/woman training.png" alt="mulher treinando"><h4>Área de musculação</h4></div>
+                  <div class="swiper-slide"><img src="/images/Woman using the treadmill.png" alt="mulher correndo na esteira"><h4>Aparelhos Aeróbicos</h4></div>
+                  <div class="swiper-slide"><img src="/images/Active people.png" alt="pessoas dançando"><h4>FitDance</h4></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+        </section>
+        <section class="features">
+            <div class="features-itens">
+                <div><img src="/images/iconoir_boxing-glove.png" alt="icone luva de luta"><p>Muay Thay</p></div>
+                <div><img src="/images/iconoir_yoga.png" alt="icone de yoga"><p>Yoga</p></div>
+                <div><img src="/images/Group-1.png" alt="icone de boneco pulando"><p>Jump</p></div>
+                <div><img src="/images/Group.png" alt="icone de boneco agachado"><p>Funcional</p></div>
+            </div>
+        </section>
+
+        <section class="location">
+            <h2>Onde estamos <i class="fa-solid fa-map-location-dot"></i></h2>
+           <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.1562068529452!2d-48.479574271116384!3d-1.4014635999999978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a489025f741bcb%3A0xe20d69f6614e8e70!2zUHJhw6dhIGRvIFBhcmHDrXNvIGRvcyBQw6Fzc2Fyb3M!5e0!3m2!1spt-BR!2sbr!4v1657561618303!5m2!1spt-BR!2sbr" 
+            max-width="400" height="300" style="border:0; border-radius: 1rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <button>Fazer matricula</button>
+        </section>
+
+        <section id="horarios" class="programation">
+            <h2>Confira <span class="destaque-text">nossa programação</span></h2>
+            <article>
+                <div><img src="/images/Group 4.png" alt="imagem de horario de funcionamento"></div>
+                <button class="programation-link">Ver horários <i class="fa-solid fa-arrow-right"></i></button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-contain">
+            <article>
+                <img class="footer-img" src="/images/Academia-Logo.png" alt="logo da academia">
+                <div class="footer-dates">
+                    <p><i class="fa-solid fa-location-dot"></i> Belém/PA, Brasil</p>
+                    <p><i class="fa-solid fa-envelope"></i> onefit@fit.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (91) 987565004</p>
+                </div>
+            </article>
+            <article class="contain-aboutOne">
+                <p>perguntas frequentes</p>
+                <p>sobre nós</p>
+                <p>Fale conosco</p>
+            </article>
+            <article class="contain-contact">
+                <button class="footer-btnZap">Iniciar uma conversa <i class="fa-brands fa-whatsapp"></i></button>
+                <h5>siga a onefit</h5>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-square"></i>
+            </article>
+        </div>
+        <div class="footer-botton">
+            <p>&copy todos os direitos reservados</p>
+            <p>Desenvolvido por <a href="https://github.com/gabriel-teotonio" target="_blank">Gabriel teotonio</a></p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/d7a19c72cc.js" crossorigin="anonymous"></script>
+    <script src="js/swiper.js" type="module"></script>
+    <script src="js/menuMobile.js"></script>
+    
+</body>
+</html>
+ 
