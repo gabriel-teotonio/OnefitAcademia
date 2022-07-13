@@ -18,6 +18,7 @@ header{
         display: flex;
         align-items: center;
         gap: 2rem;
+        z-index: 10;
             ul{
                 display: flex;
                 list-style: none;
@@ -71,7 +72,7 @@ header{
 .menuFixo{
     position: fixed;
     background-color: black;
-    transition: .5s;
+    transition: .6s;
     width: 100vw;
 }
 

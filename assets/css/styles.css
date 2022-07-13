@@ -33,6 +33,7 @@ header nav {
   display: flex;
   align-items: center;
   gap: 2rem;
+  z-index: 10;
 }
 header nav ul {
   display: flex;
@@ -81,7 +82,7 @@ header #menu-btn {
 .menuFixo {
   position: fixed;
   background-color: black;
-  transition: 0.5s;
+  transition: 0.6s;
   width: 100vw;
 }
 
